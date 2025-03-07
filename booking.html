@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking</title>
+        <link rel="icon" type="image/jpg" href="img/MAFIA_tab_icon-05.png"> <!--tab icon-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--this is for social media icon--> 
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <ul>
+            <a href = "home.html"><img id = "logo" src = "img/logo.png"></a>
+            <li>
+                <a href = "home.html">Home</a>
+            </li>
+            <li>
+                <a href = "theme.html">Theme</a>
+            </li>
+            <li>
+                <a href = "booking.html">Price</a>
+            </li>
+            <li>
+                <a href = "about.html">About</a>
+            </li>
+            <div class="play-button" onclick="document.getElementById('audio').play()"></div>
+            <audio id="audio" src="audio/Opening Titles.mp3" type="audio/mpeg"></audio>
+        </ul>
+        <div id = "price-table">
+            <h2 style="font-family: 'SpecialFont', 'sans-serif'; text-align: center; color: white;">Price Range</h2>
+            <table style="width:60%; color: white; text-align: center; margin-left: 21%;">
+                <tr style="font-family: 'SpecialFont', 'sans-serif'; background-color: darkred;">
+                  <td>NO. of Players</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'SpecialFont', 'sans-serif';">Price Per Player (RM)</td>
+                    <td id = "child">45</td>
+                    <td id = "child">39</td>
+                    <td id = "child">39</td>
+                    <td id = "child">38</td>
+                    <td id = "child">38</td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'SpecialFont', 'sans-serif';">Total Price (RM)</td>
+                    <td id = "child">180</td>
+                    <td id = "child">195</td>
+                    <td id = "child">234</td>
+                    <td id = "child">266</td>
+                    <td id = "child">304</td>
+                </tr>
+              </table>
+        </div>
+
+        <a href = "#form-container">
+            <input type = "button" id = "learn-more" value="Book Now"></input>
+        </a>
+
+        <div id = "form-container">
+            <h2 style="font-family: 'SpecialFont', 'sans-serif'; text-align: center; color: white;">Booking Form</h2>
+            <form>
+                <label>Representative Name:</label>
+                <input  id = "type1" type = "text">
+                
+                <label style="margin-left: 60px;">Number of players (pax):</label>
+                <select name="select a number" id="num">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <br><br>
+                <label>Theme Room:</label>
+                <select name="select a theme" id="theme">
+                    <option value="room1">Chirstmas Game</option>
+                    <option value="room2">Pieces of Memories</option>
+                    <option value="room3">Secret Beyond the Time</option>
+                    <option value="room4">Bloody Mary</option>
+                </select>
+                <br><br>
+                <label>Booking Date:</label>
+                <input id = "type2" type="date" id="book" name="book">
+                
+                <label style="margin-left: 60px;">Time:</label>
+                <input id = "type2" type="time" id="time" name="time">
+                <br><br>
+                <input type="submit" value="Submit" id = "sub-but" name="sub-but" onclick="sent()">
+            </form>
+        </div>
+
+        <!--the footer-->
+        <div id = "foot">
+            <footer>
+                <img src = "img/logo.png" id = "logo-foot">
+            </footer>
+            <p style="text-align: center; font-weight: bold; margin-top: -10px;">M.A.F.I.A, 2025 &copy YM Studios</p>
+            </div>
+            <div>
+                <p id = "cwu" style="font-family: 'SpecialFont', 'sans-serif';">Connect With Us</p>
+            </div>
+            <div id = "social-media">
+                <a href = "https://www.youtube.com/" class = "fa fa-youtube-play"></a>
+                <a href = "https://x.com/i/flow/login" class = "fa fa-twitter"></a>
+                <a href = "https://www.instagram.com/y0ng.m1ng?igsh=cjkza2liNWloZ2dw" class = "fa fa-instagram"></a>
+                <a href = "https://www.facebook.com/share/1GgZwUgUPJ/" class = "fa fa-facebook"></a>    
+            </div>
+        
+    </body>
+</html>
