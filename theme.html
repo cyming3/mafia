@@ -42,6 +42,21 @@
             <audio id="audio" src="audio/Opening Titles.mp3" type="audio/mpeg"></audio>
         </ul>
 
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('ul');
+                const hamburger = document.querySelector('.hamburger');
+                menu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            }
+        </script>
+
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
