@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>M.A.F.I.A Escape Room | Home</title>
+        <title>Home</title>
+        <link rel="icon" type="image/jpg" href="img/MAFIA_tab_icon-05.png"> <!--tab icon-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="mafia, escape room, puzzle game, team building">
         <meta name="description" content="M.A.F.I.A -- The Brand New Concept for Escape Room that you don't want to miss out!">
-        <meta name="robots" content="index, follow">
-        
-        <link rel="icon" type="image/jpg" href="img/MAFIA_tab_icon-05.png"> <!--tab icon-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive_style.css">
         <!--this is for social media icon--> 
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F4JPPWCGY3"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-F4JPPWCGY3');
-        </script>
     </head>
     <body>
         <ul>
@@ -41,13 +29,26 @@
             <audio id="audio" src="audio/Opening Titles.mp3" type="audio/mpeg"></audio>
         </ul>
 
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('ul');
+                const hamburger = document.querySelector('.hamburger');
+                menu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            }
+        </script>
+
         <div>
             <img id = "home_img" src = "img/mock_web_imghomepage-image.png">
             <h1>Can you find out<br>Who is the <span style = "color: red; font-family: 'SpecialFont2', sans-serif; font-size: 40pt;">IMPOSTER</span>?</h1>
             
-            <a href = "#sec1">
-                <input type = "button" id = "learn-more" value="Learn More"></input>
-            </a>
+            <button type="button" id="learn-more" onclick="window.location.href='#sec1'">Learn More</button>
         </div>
 
         <div id="sec1">
@@ -68,9 +69,7 @@
         <div id="sec2">
             <h2 id = "sec2-title">What you can expect from the Game</h2>
             <img id="img2" src = "img/mock_web_imgspeciality.png">
-            <a href = "theme.html">
-                <input type = "button" id = "play" value="Play Now!"></input>
-            </a>
+            <button type="button" id="play" onclick="window.location.href='theme.html'">Play Now!</button>
         </div>
 
         <!--the footer-->
