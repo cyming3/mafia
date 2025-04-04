@@ -41,6 +41,22 @@
             <div class="play-button" onclick="document.getElementById('audio').play()"></div>
             <audio id="audio" src="audio/Opening Titles.mp3" type="audio/mpeg"></audio>
         </ul>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('ul');
+                const hamburger = document.querySelector('.hamburger');
+                menu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            }
+        </script>
+
         <div id = "price-table">
             <h2 style="font-family: 'SpecialFont', 'sans-serif'; text-align: center; color: white;">Price Range</h2>
             <table style="width:60%; color: white; text-align: center; margin-left: 21%;">
@@ -71,9 +87,7 @@
               </table>
         </div>
 
-        <a href = "#form-container">
-            <input type = "button" id = "learn-more" value="Book Now"></input>
-        </a>
+        <button type="button" id="learn-more" onclick="window.location.href='#form-container'">Book Now</button>
 
         <div id = "form-container">
             <h2 style="font-family: 'SpecialFont', 'sans-serif'; text-align: center; color: white;">Booking Form</h2>
