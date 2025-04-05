@@ -99,6 +99,10 @@ h1{
 #social-media, #cwu{
   text-align: center;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 #social-media{
@@ -119,10 +123,10 @@ p{
 
 .fa{
   color: white;
-  display: block;
+  display: inline-block;
   text-decoration: none;
-  float: right;
   padding: 10px 10px 0 10px;
+  transition: color 0.3s ease;
 }
 
 #social-media a:hover{
@@ -670,6 +674,30 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       width: auto;
       min-width: 180px;
   }
+
+  #social-media, #cwu {
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+  }
+
+  #social-media {
+      margin-top: -30px;
+      margin-right: 0;
+  }
+
+  #cwu {
+      margin-top: -40px;
+      margin-left: 0;
+  }
+
+  .fa {
+      padding: 8px;
+      font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -713,20 +741,27 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
   }
 
   #social-media, #cwu {
-      margin: 10px auto;
+      margin: 0 auto;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
   }
 
   #social-media {
+      margin-top: -25px;
       margin-right: 0;
   }
 
   #cwu {
+      margin-top: -35px;
       margin-left: 0;
   }
 
   .fa {
-      padding: 5px;
+      padding: 6px;
+      font-size: 16px;
   }
 
   #learn-more, #play {
