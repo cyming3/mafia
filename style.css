@@ -182,7 +182,7 @@ p{
   bottom: 8px;
   width: 100%;
   text-align: left;
-  top: 80px;
+  top: 10%;
   font-family: 'SpecialFont', 'sans-serif';
   display: flex;
   flex-direction: column;
@@ -674,8 +674,7 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       width: auto;
       min-width: 250px;
       margin-left: 0;
-      padding-left: 0;
-      justify-content: center;
+      display: inline-block;
   }
 }
 
@@ -801,8 +800,7 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       width: auto;
       min-width: 220px;
       margin-left: 0;
-      padding-left: 0;
-      justify-content: center;
+      display: inline-block;
   }
 }
 
@@ -855,7 +853,7 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
 
 /* Rating tag and difficulty styles */
 .rating-tag {
-    margin: 10% auto 20px;
+    margin: 0 auto 20px;
     border-radius: 50px;
     background-color: orange;
     color: white;
@@ -883,8 +881,5 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
     font-size: 14pt;
     text-align: center;
     margin-left: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 35%;
+    display: inline-block;
 }
