@@ -99,10 +99,6 @@ h1{
 #social-media, #cwu{
   text-align: center;
   margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
 }
 
 #social-media{
@@ -123,8 +119,9 @@ p{
 
 .fa{
   color: white;
-  display: inline-block;
+  display: block;
   text-decoration: none;
+  float: right;
   padding: 10px 10px 0 10px;
   transition: color 0.3s ease;
 }
@@ -679,14 +676,15 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       margin: 0 auto;
       text-align: center;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       gap: 15px;
   }
 
   #social-media {
-      margin-top: -30px;
+      margin-top: 20px;
       margin-right: 0;
+      float: none;
   }
 
   #cwu {
@@ -695,6 +693,7 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
   }
 
   .fa {
+      float: none;
       padding: 8px;
       font-size: 18px;
   }
@@ -744,14 +743,15 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       margin: 0 auto;
       text-align: center;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       gap: 12px;
   }
 
   #social-media {
-      margin-top: -25px;
+      margin-top: 15px;
       margin-right: 0;
+      float: none;
   }
 
   #cwu {
@@ -760,6 +760,7 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
   }
 
   .fa {
+      float: none;
       padding: 6px;
       font-size: 16px;
   }
