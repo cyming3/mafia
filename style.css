@@ -674,6 +674,8 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       width: auto;
       min-width: 250px;
       margin-left: 0;
+      padding-left: 0;
+      justify-content: center;
   }
 }
 
@@ -799,6 +801,8 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       width: auto;
       min-width: 220px;
       margin-left: 0;
+      padding-left: 0;
+      justify-content: center;
   }
 }
 
@@ -881,5 +885,6 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
     margin-left: 35%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 35%;
 }
