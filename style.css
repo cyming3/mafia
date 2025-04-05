@@ -578,28 +578,23 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
   }
 
   .text p:first-child {
-      margin: 0 auto 20px;
-      width: auto;
-      padding: 5px 15px;
-      border-radius: 25px;
-      font-size: 12px;
+      margin-left: 0 !important;
+      text-align: center;
   }
 
   .text h3 {
-      margin: 0 0 20px;
-      font-size: 20pt;
+      margin-left: 0 !important;
+      text-align: center;
   }
 
   .text p:nth-child(3) {
-      margin: 0 0 20px;
-      line-height: 1.6;
-      font-size: 14px;
+      margin-left: 0 !important;
+      text-align: center;
   }
 
   .text p:last-child {
-      margin: 0;
-      width: auto;
-      font-size: 16pt;
+      margin-left: 0 !important;
+      text-align: center;
   }
 
   .prev, .next {
@@ -726,16 +721,24 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       max-width: 250px;
   }
 
+  .text p:first-child {
+      margin-left: 0 !important;
+      text-align: center;
+  }
+
   .text h3 {
-      font-size: 18pt;
+      margin-left: 0 !important;
+      text-align: center;
   }
 
   .text p:nth-child(3) {
-      font-size: 12px;
+      margin-left: 0 !important;
+      text-align: center;
   }
 
   .text p:last-child {
-      font-size: 14pt;
+      margin-left: 0 !important;
+      text-align: center;
   }
 
   .prev, .next {
