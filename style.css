@@ -183,8 +183,10 @@ p{
   text-align: left;
   top: 80px;
   font-family: 'SpecialFont', 'sans-serif';
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
 
 /* The dots/bullets/indicators */
 .dot {
@@ -575,26 +577,34 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       padding: 20px;
       text-align: center;
       order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 0;
   }
 
   .text p:first-child {
-      margin-left: 0 !important;
+      margin: 0 auto !important;
       text-align: center;
+      width: auto !important;
   }
 
   .text h3 {
-      margin-left: 0 !important;
+      margin: 0 auto !important;
       text-align: center;
+      width: auto !important;
   }
 
   .text p:nth-child(3) {
-      margin-left: 0 !important;
+      margin: 0 auto !important;
       text-align: center;
+      width: 90% !important;
   }
 
   .text p:last-child {
-      margin-left: 0 !important;
+      margin: 0 auto !important;
       text-align: center;
+      width: auto !important;
   }
 
   .prev, .next {
@@ -721,24 +731,40 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
       max-width: 250px;
   }
 
-  .text p:first-child {
-      margin-left: 0 !important;
+  .text {
+      position: relative;
+      width: 100%;
+      padding: 15px;
       text-align: center;
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 0;
+  }
+
+  .text p:first-child {
+      margin: 0 auto !important;
+      text-align: center;
+      width: auto !important;
   }
 
   .text h3 {
-      margin-left: 0 !important;
+      margin: 0 auto !important;
       text-align: center;
+      width: auto !important;
   }
 
   .text p:nth-child(3) {
-      margin-left: 0 !important;
+      margin: 0 auto !important;
       text-align: center;
+      width: 95% !important;
   }
 
   .text p:last-child {
-      margin-left: 0 !important;
+      margin: 0 auto !important;
       text-align: center;
+      width: auto !important;
   }
 
   .prev, .next {
