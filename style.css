@@ -671,8 +671,11 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
   .difficulty {
       margin: 40px auto 0;
       width: auto;
-      min-width: 180px;
+      min-width: 250px;
       margin-left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
 }
 
@@ -795,8 +798,11 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
   .difficulty {
       margin: 35px auto 0;
       width: auto;
-      min-width: 160px;
+      min-width: 220px;
       margin-left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
 }
 
@@ -872,9 +878,12 @@ src: url('font/DrymePersonalUseBold-2OYRe.ttf') format('truetype');
     margin: 40px auto 0;
     color: white;
     font-weight: bold;
-    width: 180px;
+    width: 250px;
     height: 30px;
     font-size: 14pt;
     text-align: center;
     margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
